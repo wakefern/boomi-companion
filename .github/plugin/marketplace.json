@@ -1,0 +1,51 @@
+{
+  "name": "boomi-companion",
+  "owner": {
+    "name": "Boomi"
+  },
+  "metadata": {
+    "description": "Boomi development tools for GitHub Copilot"
+  },
+  "plugins": [
+    {
+      "name": "bc-integration",
+      "description": "Boomi development tools: skills, commands, and agents for building integrations",
+      "source": {
+        "source": "github",
+        "repo": "OfficialBoomi/bc-integration"
+      }
+    },
+    {
+      "name": "bc-marketplace",
+      "description": "Interact with the marketplace.boomi.com",
+      "source": {
+        "source": "github",
+        "repo": "OfficialBoomi/bc-marketplace"
+      }
+    },
+    {
+      "name": "bc-datahub",
+      "description": "Skills to operate Boomi Data Hub",
+      "source": {
+        "source": "github",
+        "repo": "OfficialBoomi/bc-datahub"
+      }
+    },
+    {
+      "name": "bc-bdi",
+      "description": "Skills to operate Boomi Data Integration (formerly Rivery)",
+      "source": {
+        "source": "github",
+        "repo": "OfficialBoomi/bc-bdi"
+      }
+    },
+    {
+      "name": "bc-agentstudio",
+      "description": "Skills to operate Boomi Agenstudio",
+      "source": {
+        "source": "github",
+        "repo": "OfficialBoomi/bc-agentstudio"
+      }
+    }
+  ]
+}

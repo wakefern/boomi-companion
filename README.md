@@ -28,6 +28,24 @@ In Claude Code, use the `/plugin` command to add this marketplace:
 
 This registers the marketplace so Claude Code can discover all available Boomi plugins. The marketplace can also be managed through the VS Code extension by typing `/plugins` in the prompt box and selecting the **Marketplaces** tab.  After registering the markplace, you will be able to browse available plugins and install them.
 
+### GitHub Copilot
+
+GitHub Copilot supports this registry as an agent-plugin marketplace. In VS Code,
+ensure agent plugins are enabled for your organization, then add the marketplace to
+your **user** `settings.json`:
+
+```json
+{
+  "chat.plugins.marketplaces": [
+    "OfficialBoomi/boomi-companion"
+  ]
+}
+```
+
+Open the Extensions view, filter by `@agentPlugins`, and install the Boomi plugin
+you need. The marketplace makes plugins discoverable; each plugin's source
+repository must also provide Copilot-compatible plugin content before it can be
+installed and used.
 
 The following underlying skills are also available as standalone packages for use with other AI agents, or to fork and modify for your own needs.
 
